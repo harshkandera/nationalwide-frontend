@@ -14,6 +14,7 @@ const firebaseConfig = {
     measurementId:"G-DL6W225Q17" 
 };
 
+
 const initializeMessaging = async () => {
 
   try {
