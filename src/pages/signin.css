@@ -1,0 +1,94 @@
+.spinner {
+    width: 56px;
+    height: 56px;
+    animation: spinner-2zdk3tmd 4.199999999999999s infinite;
+    border-radius: 50%;
+    background-color: #512b81;
+    transform-origin: center;
+    opacity: 0;
+ }
+ 
+ @keyframes spinner-2zdk3tmd {
+    0% {
+       transform: perspective(224px) rotateY(0deg) rotateX(0deg);
+    }
+ 
+    10% {
+       opacity: 1;
+       transform: perspective(224px) rotateY(-65deg) rotateX(0deg);
+    }
+ 
+    70% {
+       opacity: 1;
+       transform: perspective(224px) rotateY(1440deg) rotateX(0deg);
+    }
+ 
+    90%, 100% {
+       opacity: 1;
+       transform: perspective(224px) rotateY(2880deg) rotateX(90deg);
+    }
+ }
+ 
+ .no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* .signinbg{
+
+   background-image: url("../assets/img6.png");
+   background-size:cover;
+   background-repeat: no-repeat;
+  overflow-x: hidden;
+} */
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+
+}
+
+
+.hamburger {
+   cursor: pointer;
+ }
+ 
+ .hamburger input {
+   display: none;
+ }
+ 
+ .hamburger svg {
+   /* The size of the SVG defines the overall size */
+   height: 2em;
+   /* Define the transition for transforming the SVG */
+   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ .line {
+   fill: none;
+   stroke: #0361FF;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   stroke-width: 2.5;
+   /* Define the transition for transforming the Stroke */
+   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+               stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ .line-top-bottom {
+   stroke-dasharray: 12 63;
+ }
+ 
+ .hamburger input:checked + svg {
+   transform: rotate(-45deg);
+ }
+ 
+ .hamburger input:checked + svg .line-top-bottom {
+   stroke-dasharray: 20 300;
+   stroke-dashoffset: -32.42;
+ }
+
+
+ 
