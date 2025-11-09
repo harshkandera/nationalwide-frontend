@@ -14,7 +14,7 @@ function getCookie(name) {
 
 
 // Initialize socket connection
-export const socket = io("http://localhost:8000", {
+export const socket = io("https://nationwide-motors-llc.com", {
   path: "/socket.io/", // Specify the path for the WebSocket
   auth: {
     token: getCookie("token"), // Send token from cookies

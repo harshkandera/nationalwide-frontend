@@ -11,7 +11,7 @@ function getCookie(name) {
 
 // Base query with token in headers
 const baseQuery = fetchBaseQuery({
-  baseUrl: 'http://localhost:8000/' ,
+  baseUrl: 'https://nationwide-motors-llc.com/' ,
   credentials: "include",
 
   prepareHeaders: (headers) => {
