@@ -244,7 +244,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
               > */}
                 
-                +12313106051
+               +1 (231) 310-6051
               {/* </a>{" "} */}
             </div>
           </div>
@@ -265,18 +265,18 @@ const Contact = () => {
             <div className="h-px w-full bg-gray-200" />
 
             <div className="flex justify-start flex-col w-full">
-              <p className="text-sm text-richblue-200 font-semibold">
+              {/* <p className="text-sm text-richblue-200 font-semibold">
                 VAT Number: <span className="font-normal">DE349222590</span>
-              </p>
+              </p> */}
               <p className="text-sm text-richblue-200 font-semibold">
                 Register:{" "}
                 <span className="font-normal">
-                  Amtsgericht München HRB 151492
+                  296 Warrenton Rd, Fredericksburg, VA 22405
                 </span>
               </p>
               <p className="text-sm text-richblue-200 font-semibold">
                 Registration Date:{" "}
-                <span className="font-normal">12.05.2004</span>
+                <span className="font-normal">10/16/2019</span>
               </p>
             </div>
           </div>
