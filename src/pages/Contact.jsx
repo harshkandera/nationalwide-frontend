@@ -191,14 +191,18 @@ const Contact = () => {
             </div>
 
             <div className="h-px w-full bg-gray-200" />
-            <a className="w-full" href={`https://wa.me/+4915510137092`} target="_blank">
-            <div
-              className="bg-orange-500 hover:bg-orange-500/80 rounded-lg flex justify-center cursor-pointer items-center w-full h-14 text-white"
-              onClick={handleStartChat}
+            <a
+              className="w-full"
+              href={`https://wa.me/+15419487232`}
+              target="_blank"
             >
-              start chat now
-              <FaArrowRightLong className="ml-2" />
-            </div>
+              <div
+                className="bg-orange-500 hover:bg-orange-500/80 rounded-lg flex justify-center cursor-pointer items-center w-full h-14 text-white"
+                onClick={handleStartChat}
+              >
+                start chat now
+                <FaArrowRightLong className="ml-2" />
+              </div>
             </a>
           </div>
 
@@ -233,14 +237,15 @@ const Contact = () => {
 
             <div className="h-px w-full bg-gray-200" />
             <div className="flex justify-center font-bold hover:underline cursor-pointer items-center w-full h-14 text-richblue-200 ">
-              <a
-                href="https://wa.me/+4915510137092"
+              {/* <a
+                href="https://wa.me/"
                 target="_blank"
                 f
                 rel="noopener noreferrer"
-              >
-+4915510137092
-              </a>{" "}
+              > */}
+                
+                +12313106051
+              {/* </a>{" "} */}
             </div>
           </div>
           <div className="font-inter flex flex-col h-[300px] w-[300px] border shadow-lg rounded-lg p-6 justify-center items-center gap-4">
@@ -250,10 +255,10 @@ const Contact = () => {
 
             <div className="flex justify-center flex-col gap-2 items-center">
               <p className="text-lg text-richblue-200 font-bold">
-                Auktionshaus AIDA GmbH
+                296 Warrenton Rd,
               </p>
               <p className="text-sm text-muted-foreground">
-                Werlingstr. 5, D-81479 München
+                Fredericksburg, VA 22405{" "}
               </p>
             </div>
 

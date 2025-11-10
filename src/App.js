@@ -97,7 +97,7 @@ useEffect(() => {
         
         {/* public routes */}
         <Route path="/" element={<Home />} />
-        <Route path="/sign-up" element={<Signup />} />
+        {/* <Route path="/sign-up" element={<Signup />} /> */}
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sendotp" element={<Signin />} />
         <Route path="/change_password" element={<Signup />} />

@@ -226,7 +226,7 @@ export default function DataTableDemo() {
         const amount = parseFloat(row.getValue("amount"));
         return (
           <div className="text-right font-medium">
-            {formatPrice(amount, { currency: "EUR" })}
+            {formatPrice(amount, { currency: "USD" })}
           </div>
         );
       },

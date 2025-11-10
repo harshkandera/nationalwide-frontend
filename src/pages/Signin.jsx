@@ -155,7 +155,9 @@ const Sendotp = () => {
   const handleSubmit = async (data) => {
     setLoading(true);
     try {
+      
       const email = data.email.toLowerCase();
+
       // console.log(data)
       // dispatch(setSignUpData(email));
 
@@ -174,7 +176,7 @@ const Sendotp = () => {
         description: "Login to continue",
       });
 
-      navigate("/sign-up");
+      navigate("/sign-in");
 
       form.reset();
       

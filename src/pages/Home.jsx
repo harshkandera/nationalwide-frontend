@@ -227,7 +227,7 @@ const Home = () => {
         </MaxWidthWrapper>
 
         <MaxWidthWrapper className="mt-10 sm:mt-30">
-          <Heading heading="Why Choose" name="nationwide-motors?" />
+          <Heading heading="Why Choose" name="NATIONWIDE MOTORS?" />
           <div className="grid grid-cols-1  sm:grid-cols-3 gap-4">
             {cardData.map((card) => (
               <ViewCard key={card.id} cardData={card} />

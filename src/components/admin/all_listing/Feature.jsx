@@ -99,7 +99,7 @@ const vehicleSchema = z.object({
 });
 
 const VehicleDetails = () => {
-  const fuelTypes = ["Petrol", "Diesel", "Electric", "Hybrid", "Lpg"];
+  const fuelTypes = ["Gasoline","Petrol", "Diesel", "Electric", "Hybrid", "Lpg"];
   const transmissions = ["Manual", "Automatic"];
 
   const [bodyTypes, setBodyTypes] = useState([]);

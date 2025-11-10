@@ -232,31 +232,3 @@ export default Signup;
 
 
 
-{
-  /* <OtpInput
-                            value={otp}
-                            onChange={(value) => {
-                              field.onChange(value);
-                              setOtp(value);
-                            }}
-                            numInputs={6}
-                            renderInput={(props) => (
-                              <input
-                                {...props}
-                                type='text'
-                                inputMode='numeric'
-                                pattern='[0-9]*'
-                              />
-                            )}
-                            inputStyle={{
-                              border: '2px solid #0361FF',
-                              borderRadius: '4px',
-                              width: '2.5rem',
-                              height: '2.5rem',
-                              margin: '0 0.5rem',
-                              fontSize: '1.5rem',
-                              textAlign: 'center',
-                              padding: '2px',
-                            }}
-                          /> */
-}
