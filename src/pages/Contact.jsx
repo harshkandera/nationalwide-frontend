@@ -231,7 +231,7 @@ const Contact = () => {
             </div>
 
             <div className="flex justify-center flex-col gap-2 items-center">
-              <p className="text-lg text-richblue-200 font-bold">Whatsapp Us</p>
+              <p className="text-lg text-richblue-200 font-bold">Contact Us</p>
               <p className="text-muted-foreground">From your phone</p>
             </div>
 
