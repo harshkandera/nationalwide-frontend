@@ -191,7 +191,7 @@ const Home = () => {
 
             <div className="flex flex-col sm:hidden items-center sm:flex-row gap-6 mt-8">
               <Link
-                to="/product"
+                to="/browse_auctions"
                 className={cn(
                   buttonVariants({ variant: "btn", size: "lg" }),
                   "drop-shadow-xl"
