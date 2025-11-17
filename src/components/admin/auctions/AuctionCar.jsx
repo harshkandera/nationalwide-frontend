@@ -2,7 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "../../../component/ui/button";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useGetAuctionsByIdQuery,useDeleteBidsMutation } from "../../../slices/apiSlices/carListingApiSlice";
+import {
+  useGetAuctionsByIdQuery,
+  useDeleteBidsMutation,
+} from "../../../slices/apiSlices/carListingApiSlice";
 import { formatPrice } from "../../../lib/utils";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -35,9 +38,14 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "../../../component/ui/alert-dialog"
-import { Card, CardHeader, CardTitle, CardContent } from '../../../component/ui/card';
-import { BiUser, BiEnvelope, BiPhone, BiBuilding } from 'react-icons/bi';
+} from "../../../component/ui/alert-dialog";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "../../../component/ui/card";
+import { BiUser, BiEnvelope, BiPhone, BiBuilding } from "react-icons/bi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 
 import PhoneInput from "react-phone-input-2";
@@ -81,10 +89,7 @@ export const Features = ({ vehicleInformation }) => {
   );
 };
 
-
-
 export const ProfileDataCard = ({ user }) => {
-
   if (!user) {
     return (
       <Card className="w-full max-w-3xl mx-auto ">
@@ -118,7 +123,7 @@ export const ProfileDataCard = ({ user }) => {
                 </p>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-3">
               <BiEnvelope className="text-richblue-100 text-xl" />
               <div>
@@ -126,7 +131,7 @@ export const ProfileDataCard = ({ user }) => {
                 <p className="font-semibold">{user?.email}</p>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-3">
               <BiPhone className="text-richblue-100 text-xl" />
               <div>
@@ -142,14 +147,14 @@ export const ProfileDataCard = ({ user }) => {
                       border: "none",
                       backgroundColor: "transparent",
                       fontSize: "0.875rem",
-                      fontWeight: "600"
+                      fontWeight: "600",
                     }}
                   />
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div className="space-y-3">
             {user?.companyName && (
               <div className="flex items-center gap-3">
@@ -160,10 +165,10 @@ export const ProfileDataCard = ({ user }) => {
                 </div>
               </div>
             )}
-            
+
             <div className="flex items-center gap-3">
               <div>
-              <HiOutlineLocationMarker className="text-richblue-100 text-xl " />
+                <HiOutlineLocationMarker className="text-richblue-100 text-xl " />
               </div>
               <div>
                 <p className="text-xs text-gray-500">Address</p>
@@ -177,12 +182,12 @@ export const ProfileDataCard = ({ user }) => {
             </div>
           </div>
         </div>
-        
+
         {user?.image && (
           <div className="mt-6 flex justify-center">
-            <img 
-              src={user?.image} 
-              alt="Profile" 
+            <img
+              src={user?.image}
+              alt="Profile"
               className="w-24 h-24 rounded-full object-cover border-4 border-richblue-100"
             />
           </div>
@@ -322,7 +327,6 @@ const AuctionsCar = () => {
     }
   };
 
-
   return (
     <Dashboard>
       <div className="mb-6">
@@ -429,8 +433,7 @@ const AuctionsCar = () => {
       </div>
 
       <div className="w-full">
-
-      <ProfileDataCard user={data?.data?.highestBidder} />
+        <ProfileDataCard user={data?.data?.highestBidder} />
         {/* <HighestBidderCard
           highestBidder={data?.data?.highestBidder}
           highestBid={data?.data?.highestBid}
@@ -459,7 +462,6 @@ const AuctionsCar = () => {
 export default AuctionsCar;
 
 export const AuctionCarCard = ({ carData }) => {
-
   const dispatch = useDispatch();
 
   // useEffect(() => {
@@ -528,11 +530,11 @@ export const AuctionCarCard = ({ carData }) => {
   );
 };
 
-
 export const AuctionHistoryTable = ({ bidHistory }) => {
   const [visibleBids, setVisibleBids] = useState(3); // Initially show 3 bids
   const [isDialogOpen, setIsDialogOpen] = useState(false); // State for AlertDialog
   const [selectedBid, setSelectedBid] = useState(null); // Store the selected bid for withdrawal
+  const navigate = useNavigate();
 
   const [deleteBids, { isLoading }] = useDeleteBidsMutation();
 
@@ -547,16 +549,15 @@ export const AuctionHistoryTable = ({ bidHistory }) => {
 
   // Function to handle delete bid
   const DeleteHandler = async () => {
-
     if (!selectedBid) return;
 
     try {
-      const { _id , bidAmount } = selectedBid;
+      const { _id, bidAmount } = selectedBid;
 
       if (!_id) {
         return toast({
           title: "Bid Id not found",
-          variant: 'destructive',
+          variant: "destructive",
         });
       }
 
@@ -565,15 +566,17 @@ export const AuctionHistoryTable = ({ bidHistory }) => {
       toast({
         title: "Bid Deleted Successfully",
       });
-      setIsDialogOpen(false); 
-
+      setIsDialogOpen(false);
     } catch (err) {
       toast({
         title: "Failed to Delete Bid",
-        description: err.message || err.data.message || 'An error occurred while Deleting the Bid. Please try again later.',
-        variant: 'destructive',
+        description:
+          err.message ||
+          err.data.message ||
+          "An error occurred while Deleting the Bid. Please try again later.",
+        variant: "destructive",
       });
-      setIsDialogOpen(false); 
+      setIsDialogOpen(false);
       console.error(err);
     }
   };
@@ -586,15 +589,20 @@ export const AuctionHistoryTable = ({ bidHistory }) => {
             <th className="py-2 px-4 border-b">Email</th>
             <th className="py-2 px-4 border-b">Bid Amount</th>
             <th className="py-2 px-4 border-b">Bid Time</th>
-            <th className="py-2 px-4 border-b">Actions</th> {/* Add Actions column */}
+            <th className="py-2 px-4 border-b">Actions</th>{" "}
+            {/* Add Actions column */}
           </tr>
         </thead>
         <tbody>
           {bidHistory.slice(0, visibleBids).map((bid, index) => (
             <tr className="font-inter font-medium text-sm" key={index}>
-              <td className="py-2 px-4 text-muted-foreground border-b">
+              <td
+                className="py-2 px-4 text-muted-foreground border-b cursor-pointer hover:underline"
+                onClick={() => navigate(`/admin/all_users/${bid?.user[0]?.id}`)}
+              >
                 {bid?.user[0]?.email}
               </td>
+
               <td className="py-2 px-4 font-semibold border-b">
                 {formatPrice(bid.bidAmount)}
               </td>
@@ -604,12 +612,12 @@ export const AuctionHistoryTable = ({ bidHistory }) => {
               <td className="py-2 px-4 border-b">
                 <AlertDialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
                   <AlertDialogTrigger asChild>
-                    <Button 
-                      variant='outline' 
-                      size='sm' 
+                    <Button
+                      variant="outline"
+                      size="sm"
                       onClick={() => {
                         setSelectedBid(bid);
-                        setIsDialogOpen(true); 
+                        setIsDialogOpen(true);
                       }}
                     >
                       Delete
@@ -617,22 +625,25 @@ export const AuctionHistoryTable = ({ bidHistory }) => {
                   </AlertDialogTrigger>
                   <AlertDialogContent>
                     <AlertDialogHeader>
-                      <AlertDialogTitle>Withdrawal of Your Bid</AlertDialogTitle>
+                      <AlertDialogTitle>Delete Bid</AlertDialogTitle>
                       <AlertDialogDescription>
-                        Are you sure you want to withdraw your Bid?
+                        Are you sure you want Delete this Bid?
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>
-                      <AlertDialogCancel onClick={() => setIsDialogOpen(false) 
-                      }>
+                      <AlertDialogCancel onClick={() => setIsDialogOpen(false)}>
                         Cancel
                       </AlertDialogCancel>
-                      <AlertDialogAction 
-                        onClick={DeleteHandler}  // Change this line to pass the function reference
-                        className="bg-red-600 hover:bg-red-500/90 text-white" 
+                      <AlertDialogAction
+                        onClick={DeleteHandler} // Change this line to pass the function reference
+                        className="bg-red-600 hover:bg-red-500/90 text-white"
                         disabled={isLoading}
                       >
-                        {isLoading ? <span className="loader"></span> : 'Delete'}
+                        {isLoading ? (
+                          <span className="loader"></span>
+                        ) : (
+                          "Delete"
+                        )}
                       </AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
@@ -654,7 +665,6 @@ export const AuctionHistoryTable = ({ bidHistory }) => {
   );
 };
 
-
 const HighestBidderCard = ({ highestBidder, highestBid }) => {
   if (!highestBidder) {
     return <p>No bids placed yet.</p>;
@@ -674,15 +684,18 @@ const HighestBidderCard = ({ highestBidder, highestBid }) => {
         ) : (
           <Icons.photo className={`w-16 h-16 mr-2`} />
         )}
-       
+
         <div>
           <h2 className="text-lg font-semibold">{username}</h2>
           <p className="text-sm text-gray-600">{email}</p>
           <p className="text-sm text-gray-600">{phone}</p>
-          <div className="text-base mt-2 font-semibold">{formatPrice(highestBid)} <span className="text-xs text-muted-foreground font-normal">(highest Bid)</span></div>
-
+          <div className="text-base mt-2 font-semibold">
+            {formatPrice(highestBid)}{" "}
+            <span className="text-xs text-muted-foreground font-normal">
+              (highest Bid)
+            </span>
+          </div>
         </div>
-
       </div>
     </div>
   );
@@ -736,7 +749,7 @@ export const UploadInvoice = ({ carId, userId }) => {
 
       try {
         const response = await apiConnector(
-          'GET',
+          "GET",
           `/api/v2/get_invoices/${carId}/${userId}`
         );
 
@@ -746,8 +759,8 @@ export const UploadInvoice = ({ carId, userId }) => {
           return;
         }
       } catch (error) {
-        console.error('Error fetching invoices:', error);
-        toast(error?.response?.data?.message || 'Failed to fetch invoices.');
+        console.error("Error fetching invoices:", error);
+        toast(error?.response?.data?.message || "Failed to fetch invoices.");
       }
     };
 
@@ -772,10 +785,9 @@ export const UploadInvoice = ({ carId, userId }) => {
       formData.append("invoice", file);
     });
 
-    if(!carId || !userId) return
+    if (!carId || !userId) return;
 
     setLoading(true);
-
 
     try {
       const response = await apiConnector(
@@ -878,10 +890,9 @@ export const UploadInvoice = ({ carId, userId }) => {
                 </div>
               ))}
 
-              {
-                uploadedInvoices?.length > 0 && (
-                  uploadedInvoices?.map((invoice, index) => (
-                    <div
+              {uploadedInvoices?.length > 0 &&
+                uploadedInvoices?.map((invoice, index) => (
+                  <div
                     key={index}
                     className="relative bg-slate-100 text-sm rounded p-2 pr-10"
                   >
@@ -894,12 +905,9 @@ export const UploadInvoice = ({ carId, userId }) => {
                       >
                         <p>Invoice {index + 1}</p>
                       </a>
-                     
                     </div>
                   </div>
-                  ))
-                )
-              }
+                ))}
             </div>
           </div>
         </form>

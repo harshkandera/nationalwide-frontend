@@ -403,7 +403,6 @@ const CarDetails = () => {
   // ('/buy_now/:userId/:carId
 
   const buyNowSubmitHandler = async (getData) => {
-    
     if (!user || !istoken) {
       navigate("/sign-in");
     }
@@ -419,7 +418,7 @@ const CarDetails = () => {
           description: "Please check back later.",
           status: "warning",
           variant: "destructive",
-        })
+        });
         return;
       }
 
@@ -429,7 +428,7 @@ const CarDetails = () => {
           description: "Please check back later.",
           status: "warning",
           variant: "destructive",
-        })
+        });
         return;
       }
 
@@ -469,10 +468,8 @@ const CarDetails = () => {
 
       dispatch(listenToHighestBid(id));
 
-      navigate('/dashboard/auctions')
-
+      navigate("/dashboard/auctions");
     } catch (err) {
-
       if (err?.data?.message) {
         toast({
           title: "Failed to Buy Now",
@@ -673,7 +670,6 @@ const CarDetails = () => {
         </div>
 
         <div className="w-full max-w-screen flex-col sm:grid sm:grid-cols-9 sm:gap-6">
-
           <div className="col-span-6">
             <div className="w-full max-w-screen">
               <WPSGallery galleryImages={data?.Listing?.images} />
@@ -806,8 +802,12 @@ const CarDetails = () => {
                     variant="secondary"
                     className="w-full py-2"
                     onClick={buyNowSubmitHandler}
+                    disabled={buyNowLoading}
                   >
-                  Buy Now in  {formatPrice(data?.Listing?.buyNow?.buyNowPrice)}
+                    Buy Now in {formatPrice(data?.Listing?.buyNow?.buyNowPrice)}
+                    {buyNowLoading && (
+                      <div className="ml-2 h-4 w-4 animate-spin rounded-full border-2 border-blue-800 border-t-transparent"></div>
+                    )}
                   </Button>
                 )}
 
@@ -1097,8 +1097,12 @@ const CarDetails = () => {
                   variant="secondary"
                   className="w-full py-2"
                   onClick={buyNowSubmitHandler}
+                  disabled={buyNowLoading}
                 >
-                  Buy Now in  {formatPrice(data?.Listing?.buyNow?.buyNowPrice)}
+                  Buy Now in {formatPrice(data?.Listing?.buyNow?.buyNowPrice)}{" "}
+                  {buyNowLoading && (
+                    <div className="ml-2 h-4 w-4 animate-spin rounded-full border-2 border-blue-800 border-t-transparent"></div>
+                  )}
                 </Button>
               )}
 
@@ -1130,8 +1134,6 @@ const CarDetails = () => {
               </div>
             </div>
           </div>
-
-          
         </div>
       </MaxWidthWrapper>
       <Footer />

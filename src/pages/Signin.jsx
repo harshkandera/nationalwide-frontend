@@ -335,7 +335,7 @@ const Sendotp = () => {
                               inputProps={{
                                 required: true,
                                 className:
-                                  "w-full p-2 border-[1px] rounded-md focus:outline-0",
+                                  "w-full p-2 border-[1px] pl-10 rounded-md focus:outline-0",
                               }}
                               containerClass="w-full"
                               inputClass="w-full h-10 px-4 border-1 py-2 focus:outline-none focus:ring-0 border-1 rounded-md"
