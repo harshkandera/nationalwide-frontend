@@ -45,9 +45,9 @@ const PressKit = () => {
                         </div>
                     </div>
 
-                    <div className='mt-20'>
+                    {/* <div className='mt-20'>
                     <DefaultGallery />
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

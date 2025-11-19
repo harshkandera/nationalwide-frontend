@@ -2,68 +2,68 @@ import React from 'react';
 import MaxWidthWrapper from '../../../component/MaxWidthWrapper';
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      title: "Expanding a Local Dealership’s Inventory",
-      comment:
-        "nationwide-motors.com has completely transformed my business. As a local dealer, I was limited to sourcing cars locally, but now I can access auctions across USA. This has allowed me to offer my customers a wider selection of vehicles and grow my dealership.",
-      client: "Thomas G., Munich, Germany",
-    },
-    {
-      title: "Seamless International Purchases",
-      comment:
-        "I was nervous about buying cars internationally, but nationwide-motors.com made the process incredibly easy. From bidding to arranging delivery, everything was handled smoothly. Now I regularly purchase cars from different countries without any hassle.",
-      client: "Sophie P., Lyon, France",
-    },
-    {
-      title: "Streamlining Fleet Management",
-      comment:
-        "Managing a fleet for our logistics company used to be time-consuming and expensive. Thanks to nationwide-motors.com, we’ve been able to replace older vehicles quickly and at a great price, all without leaving the office.",
-      client: "Jan H., Rotterdam, Netherlands",
-    },
-    {
-      title: "Expanding a Used Car Business",
-      comment:
-        "Using nationwide-motors.com has allowed me to expand my used car business beyond my expectations. I’ve been able to source high-quality vehicles at excellent prices, giving me a competitive edge in the market.",
-      client: "Marco S., Milan, Italy",
-    },
-    {
-      title: "Buying a Dream Car from Abroad",
-      comment:
-        "I had been looking for a specific model for months with no luck. nationwide-motors.com not only helped me find it in another country but also made the bidding and purchase process straightforward. I’m now driving my dream car!",
-      client: "Lars E., Oslo, Norway",
-    },
-    {
-      title: "Simplifying Corporate Vehicle Sales",
-      comment:
-        "We needed to sell off several vehicles from our corporate fleet quickly. Using nationwide-motors.com, we were able to list and auction them in no time, reaching buyers across USA. The platform made everything fast and easy.",
-      client: "Emily K., London, UK",
-    },
-    {
-      title: "Hassle-Free Payments and Delivery",
-      comment:
-        "nationwide-motors.com takes care of the entire transaction process, including payment and delivery. I’ve bought multiple vehicles, and every time, the experience has been smooth, allowing me to focus on my business without worrying about logistics.",
-      client: "Andreas L., Zurich, Switzerland",
-    },
-    {
-      title: "Expanding Beyond Borders",
-      comment:
-        "As a car dealer in Eastern USA, I was looking for ways to expand my inventory. nationwide-motors.com gave me access to auctions in Western USA, helping me diversify my stock and attract more customers.",
-      client: "Mateusz W., Warsaw, Poland",
-    },
-    {
-      title: "Building Trust through Transparency",
-      comment:
-        "What I love most about nationwide-motors.com is the transparency. Every vehicle is clearly listed with all the details I need to make informed decisions. I never feel like I’m taking a risk when bidding on cars.",
-      client: "Hana M., Prague, Czech Republic",
-    },
-    {
-      title: "Efficient Bidding from Anywhere",
-      comment:
-        "nationwide-motors.com’s platform allows me to bid from anywhere, anytime. I can monitor auctions and make bids on the go, which has been a game-changer for my business. It’s so easy to use, and the range of vehicles is amazing.",
-      client: "David F., Barcelona, Spain",
-    },
-  ];
+const testimonials = [
+  {
+    title: "Expanding Inventory with Nationwide Access",
+    comment:
+      "nationwide-motors.com has completely transformed my dealership. Earlier, I relied only on local auctions, but now I can source cars from all over the USA. This has helped me offer a wider range of vehicles and scale my business faster than ever.",
+    client: "Thomas G., Dallas, Texas",
+  },
+  {
+    title: "Smooth and Simple Buying Experience",
+    comment:
+      "I was initially unsure about purchasing vehicles from out-of-state auctions, but nationwide-motors.com made everything effortless. From bidding to transportation, the process was seamless. Now I regularly buy vehicles from coast to coast.",
+    client: "Sophia P., Phoenix, Arizona",
+  },
+  {
+    title: "Streamlining Fleet Upgrades",
+    comment:
+      "Managing our logistics fleet used to be a challenge. Thanks to nationwide-motors.com, we can replace older trucks quickly and at competitive prices without leaving the office. It has made fleet management more efficient than ever.",
+    client: "Jan H., Indianapolis, Indiana",
+  },
+  {
+    title: "Growing My Used Car Business",
+    comment:
+      "nationwide-motors.com has helped me expand my used car business far beyond my expectations. I now source high-quality vehicles at great prices across the country, which gives me a big edge over local competitors.",
+    client: "Marco S., Miami, Florida",
+  },
+  {
+    title: "Finally Found My Dream Car",
+    comment:
+      "I had been searching for a specific model for months. nationwide-motors.com helped me find it in another state and made the whole bidding and purchase process super easy. I'm finally driving my dream car!",
+    client: "Lars E., Seattle, Washington",
+  },
+  {
+    title: "Quick Corporate Vehicle Liquidation",
+    comment:
+      "We needed to sell several vehicles from our corporate fleet quickly. With nationwide-motors.com, we listed and auctioned everything in no time and reached buyers from different states. The entire process was smooth and efficient.",
+    client: "Emily K., New York, New York",
+  },
+  {
+    title: "Reliable Payments and Delivery",
+    comment:
+      "One thing I appreciate most about nationwide-motors.com is that they handle payments and delivery smoothly. I've bought multiple vehicles, and each transaction has been stress-free, allowing me to focus on growing my business.",
+    client: "Andrew L., Denver, Colorado",
+  },
+  {
+    title: "Expanding Across State Lines",
+    comment:
+      "As a dealer on the East Coast, I wanted access to more diverse inventory. nationwide-motors.com gave me entry to auctions all over the West Coast, helping me stock unique vehicles that attract more customers.",
+    client: "Matthew W., Atlanta, Georgia",
+  },
+  {
+    title: "Trustworthy and Transparent",
+    comment:
+      "What I value most is the transparency. Every vehicle is listed with clear details, making it easy to make confident bidding decisions. I always feel informed and in control during auctions.",
+    client: "Hannah M., Chicago, Illinois",
+  },
+  {
+    title: "Bid from Anywhere, Anytime",
+    comment:
+      "nationwide-motors.com lets me bid from anywhere — even while traveling. I can monitor auctions and place bids on the go, which has been a major advantage for my dealership. The platform is incredibly easy to use.",
+    client: "David F., Los Angeles, California",
+  },
+];
 
   return (
     <MaxWidthWrapper>

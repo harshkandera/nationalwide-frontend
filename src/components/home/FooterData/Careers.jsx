@@ -4,56 +4,56 @@ import { LuMinus, LuPlus } from 'react-icons/lu';
 import MaxWidthWrapper from '../../../component/MaxWidthWrapper';
 
 const Careers = () => {
-    const jobs = [
-        {
-            title: 'Account Manager (Inside Sales) Fluent in Dutch and French',
-            location: 'Tienen, Flanders, Belgium',
-            department: 'Sales',
-            workType: 'Full time',
-        },
-        {
-            title: 'Logistic Specialist',
-            location: 'Frankfurt, Germany',
-            department: 'Logistics',
-            workType: 'Full time',
-        },
-        {
-            title: 'Administratief Medewerker (M/V)',
-            location: 'Vianen, Utrecht, Netherlands',
-            department: 'Operations',
-            workType: 'Full time',
-        },
-        {
-            title: 'Commercial Director EU',
-            location: 'Tienen, Flanders, Belgium',
-            department: 'Sales',
-            workType: 'Full time',
-        },
-        {
-            title: 'QA Engineer',
-            location: 'Frankfurt, Germany',
-            department: 'ICT',
-            workType: 'Full time',
-        },
-        {
-            title: 'Customer Service Specialist Fluent in Dutch & French',
-            location: 'Tienen, Flanders, Belgium',
-            department: 'Customer Service',
-            workType: 'Full time',
-        },
-        {
-            title: 'Account Manager (Inside Sales) Fluent in Portuguese',
-            location: 'Madrid, Spain',
-            department: 'Sales',
-            workType: 'Full time',
-        },
-        {
-            title: 'Risk & Compliance Officer',
-            location: 'Frankfurt, Germany',
-            department: 'Finance',
-            workType: 'Full time',
-        },
-    ];
+const jobs = [
+    {
+        title: 'Account Manager (Inside Sales)',
+        location: 'Austin, Texas, USA',
+        department: 'Sales',
+        workType: 'Full time',
+    },
+    {
+        title: 'Logistics Coordinator',
+        location: 'Chicago, Illinois, USA',
+        department: 'Logistics',
+        workType: 'Full time',
+    },
+    {
+        title: 'Administrative Assistant',
+        location: 'Orlando, Florida, USA',
+        department: 'Operations',
+        workType: 'Full time',
+    },
+    {
+        title: 'Commercial Director – North America',
+        location: 'New York, New York, USA',
+        department: 'Sales',
+        workType: 'Full time',
+    },
+    {
+        title: 'QA Engineer',
+        location: 'San Francisco, California, USA',
+        department: 'Engineering',
+        workType: 'Full time',
+    },
+    {
+        title: 'Customer Support Specialist (Bilingual – English & Spanish)',
+        location: 'Houston, Texas, USA',
+        department: 'Customer Support',
+        workType: 'Full time',
+    },
+    {
+        title: 'Account Manager (Inside Sales)',
+        location: 'Miami, Florida, USA',
+        department: 'Sales',
+        workType: 'Full time',
+    },
+    {
+        title: 'Risk & Compliance Analyst',
+        location: 'Boston, Massachusetts, USA',
+        department: 'Finance',
+        workType: 'Full time',
+    },
+];
 
     return (
         <MaxWidthWrapper>

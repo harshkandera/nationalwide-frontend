@@ -473,7 +473,8 @@ const ProfileFormDialog = ({
 
                 {/* Action Buttons */}
                 <div className="flex justify-between items-center gap-3 pt-4">
-                  {allowSkip && (
+                  
+                  {/* {allowSkip && (
                     <Button
                       variant="secondary"
                       onClick={() => {
@@ -483,7 +484,7 @@ const ProfileFormDialog = ({
                     >
                       Skip & Continue
                     </Button>
-                  )}
+                  )} */}
 
                   <div className="flex gap-3">
                     <Button
