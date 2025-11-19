@@ -88,7 +88,7 @@ const FAQ = ({ data }) => {
     },
     {
       question: "What is a COC?",
-      answer: "A Certificate of Conformity (COC) is a document that declares that your vehicle conforms to EC standards and is allowed free movement within the European Union. It includes the manufacturer’s technical specifications and other data as set by EU regulations.",
+      answer: "A Certificate of Conformity (COC) is a document that declares that your vehicle conforms to EC standards and is allowed free movement within the USAan Union. It includes the manufacturer’s technical specifications and other data as set by EU regulations.",
       isOpen: false
     },
     {

@@ -43,7 +43,7 @@ const TermsAndConditions = () => {
                     <li><a href="#registration" className="text-blue-600 hover:underline">Platform Registration</a></li>
                     <li><a href="#access" className="text-blue-600 hover:underline">Platform Access and Use</a></li>
                     <li><a href="#auctions" className="text-blue-600 hover:underline">Auctions and Offers</a></li>
-                    <li><a href="#sales" className="text-blue-600 hover:underline">nationwide-motors Europe Sales</a></li>
+                    <li><a href="#sales" className="text-blue-600 hover:underline">nationwide-motors USA Sales</a></li>
                             <li><a href="#transport" className="text-blue-600 hover:underline">Transport and Delivery of Vehicles and Vehicle Documents</a></li>
                             <li><a href="#vehicleInfo" className="text-blue-600 hover:underline">Vehicle Information</a></li>
                             <li><a href="#warranty" className="text-blue-600 hover:underline">Limited Warranty</a></li>
@@ -60,13 +60,13 @@ const TermsAndConditions = () => {
                     {/* Sections */}
                     <section ref={scopeRef} id="scope" className="mb-8">
                         <h2 className="text-xl font-semibold mb-2">1. Scope</h2>
-                        <p>1.1 Bid Drive Europe NV has developed a Platform for the re-marketing of vehicles whereby leasing companies, car manufacturers, other companies, and natural persons acting for professional purposes or not can advertise Vehicles they wish to sell, and professional and recognised car dealers can submit an Offer for the purchase of Vehicles.</p>
-                        <p>1.2 These Terms and Conditions govern the relation between Bid Drive Europe and Buyer in relation to Buyer's use of the Platform and in relation to the offering, sale, and delivery of all Vehicles from or on behalf of Bid Drive Europe to Buyer. By agreeing to these Terms and Conditions, buyers also accept all policies and additional terms posted on our site, including, and not limited to, our Claims Policy and FAQ section.</p>
+                        <p>1.1 Bid Drive USA NV has developed a Platform for the re-marketing of vehicles whereby leasing companies, car manufacturers, other companies, and natural persons acting for professional purposes or not can advertise Vehicles they wish to sell, and professional and recognised car dealers can submit an Offer for the purchase of Vehicles.</p>
+                        <p>1.2 These Terms and Conditions govern the relation between Bid Drive USA and Buyer in relation to Buyer's use of the Platform and in relation to the offering, sale, and delivery of all Vehicles from or on behalf of Bid Drive USA to Buyer. By agreeing to these Terms and Conditions, buyers also accept all policies and additional terms posted on our site, including, and not limited to, our Claims Policy and FAQ section.</p>
                         <p>1.3 Registration for the Platform and any access or use of the Platform, including making an Offer in relation to any Vehicle, shall qualify as unconditional acceptance by Buyer of these Terms and Conditions.</p>
-                        <p>1.4 Buyer agrees to waive its own general and special terms and conditions, even where it is stated therein that only those conditions may apply, and even if such terms and conditions were not protested by Bid Drive Europe.</p>
-                        <p>1.5 These Terms and Conditions constitute the entire understanding between Bid Drive Europe and Buyer with respect to the subject matter hereof, and supersede all prior representations, negotiations, understandings, agreements, and undertakings, whether written or oral, with respect to the subject matter hereof.</p>
+                        <p>1.4 Buyer agrees to waive its own general and special terms and conditions, even where it is stated therein that only those conditions may apply, and even if such terms and conditions were not protested by Bid Drive USA.</p>
+                        <p>1.5 These Terms and Conditions constitute the entire understanding between Bid Drive USA and Buyer with respect to the subject matter hereof, and supersede all prior representations, negotiations, understandings, agreements, and undertakings, whether written or oral, with respect to the subject matter hereof.</p>
                         <p>1.6 Buyer expressly acknowledges having read, understood, and agreed with all the present terms and conditions. Specifically, Buyer is in agreement with the principles regarding Vehicle Information, warranty, conformity, and complaints and liability as set out in clauses 8 to 11 of these Terms and Conditions.</p>
-                        <p>1.7 In relation to Bid Drive Europe Sales, these Terms and Conditions operate as a framework governing each Bid Drive Europe Sale. Each Bid Drive Europe Sale shall be deemed to constitute a separate agreement between Bid Drive Europe and Buyer, and each such Bid Drive Europe Sale shall be subject to these Terms and Conditions.</p>
+                        <p>1.7 In relation to Bid Drive USA Sales, these Terms and Conditions operate as a framework governing each Bid Drive USA Sale. Each Bid Drive USA Sale shall be deemed to constitute a separate agreement between Bid Drive USA and Buyer, and each such Bid Drive USA Sale shall be subject to these Terms and Conditions.</p>
 
                     </section>
 
@@ -147,7 +147,7 @@ const TermsAndConditions = () => {
 
                     <div>
                         <dt className="font-semibold">Bid Drive NV:</dt>
-                        <dd>European Car Auction and Distribution Solutions NV/SA, with registered office at Grijpenlaan 19A, 3300 Tienen, Belgium, with company number 0867.129.223; VAT BE0867129223;</dd>
+                        <dd>USAan Car Auction and Distribution Solutions NV/SA, with registered office at Grijpenlaan 19A, 3300 Tienen, Belgium, with company number 0867.129.223; VAT BE0867129223;</dd>
                     </div>
 
                     <div>
@@ -157,7 +157,7 @@ const TermsAndConditions = () => {
 
                     <div>
                         <dt className="font-semibold">Export:</dt>
-                        <dd>a supply of goods that are delivered and carried outside of the European Union;</dd>
+                        <dd>a supply of goods that are delivered and carried outside of the USAan Union;</dd>
                     </div>
 
                     <div>
@@ -295,31 +295,31 @@ const TermsAndConditions = () => {
                 </p>
 
                 <p className="mb-4">
-                    3.4 Depending on the registered office of the Buyer, and subject to the applicable VAT regulations, Buyer may be offered the possibility to choose from which member of Bid Drive Europe it wishes to receive invoices under these Terms and Conditions. If Buyer is:
+                    3.4 Depending on the registered office of the Buyer, and subject to the applicable VAT regulations, Buyer may be offered the possibility to choose from which member of Bid Drive USA it wishes to receive invoices under these Terms and Conditions. If Buyer is:
                 </p>
 
                 <p className="ml-6 mb-4">
-                    3.4.1 offered this possibility, for the purposes of these Terms and Conditions, Bid Drive Europe shall be the member of Bid Drive Europe chosen by Buyer and such entity shall be Buyer's sole contracting party for any dealings between the Parties governed by these Terms and Conditions and shall be the entity invoicing Buyer. If Buyer wishes to subsequently modify its choice, such modification shall be subject to Bid Drive Europe's prior approval; and
+                    3.4.1 offered this possibility, for the purposes of these Terms and Conditions, Bid Drive USA shall be the member of Bid Drive USA chosen by Buyer and such entity shall be Buyer's sole contracting party for any dealings between the Parties governed by these Terms and Conditions and shall be the entity invoicing Buyer. If Buyer wishes to subsequently modify its choice, such modification shall be subject to Bid Drive USA's prior approval; and
                 </p>
 
                 <p className="ml-6 mb-4">
-                    3.4.2 not offered this possibility, for the purposes of these Terms and Conditions Bid Drive Europe shall be Bid Drive Europe NV, and Bid Drive Europe NV shall be Buyer's sole contracting party for any dealings between the Parties governed by these Terms and Conditions and shall be the entity invoicing Buyer.
+                    3.4.2 not offered this possibility, for the purposes of these Terms and Conditions Bid Drive USA shall be Bid Drive USA NV, and Bid Drive USA NV shall be Buyer's sole contracting party for any dealings between the Parties governed by these Terms and Conditions and shall be the entity invoicing Buyer.
                 </p>
 
                 <p className="ml-6 mb-4">
-                    3.4.3 Bid Drive Europe might decide, without justification or advance notice, to invoice from Bid Drive Europe NV location or from the country where the Buyer is registered. Such change shall not open the right to any type of claim or cancellation;
+                    3.4.3 Bid Drive USA might decide, without justification or advance notice, to invoice from Bid Drive USA NV location or from the country where the Buyer is registered. Such change shall not open the right to any type of claim or cancellation;
                 </p>
 
                 <p className="mb-4">
-                    3.5 Buyer guarantees that all information and/or documents provided are correct, complete and valid. Buyer shall promptly notify Bid Drive Europe of any changes in the information mentioned in the Registration Form and/or documents submitted under clause 3.2. Notwithstanding clause 3.6, Buyer acknowledges and accepts that Bid Drive Europe bears no liability regarding verification of the information and documentation provided by Buyer.
+                    3.5 Buyer guarantees that all information and/or documents provided are correct, complete and valid. Buyer shall promptly notify Bid Drive USA of any changes in the information mentioned in the Registration Form and/or documents submitted under clause 3.2. Notwithstanding clause 3.6, Buyer acknowledges and accepts that Bid Drive USA bears no liability regarding verification of the information and documentation provided by Buyer.
                 </p>
 
                 <p className="mb-4">
-                    3.6 Bid Drive Europe has at any time (before or after confirmation of Buyer's registration) the right to verify the accuracy of the information contained in the Registration Form and/or the validity of the documents submitted by Buyer under clause 3.2. If such verification reveals any inaccuracy of information and/or any invalidity of documentation, without prejudice to its other rights and remedies under these Terms and Conditions or otherwise, Bid Drive Europe reserves the right to:
+                    3.6 Bid Drive USA has at any time (before or after confirmation of Buyer's registration) the right to verify the accuracy of the information contained in the Registration Form and/or the validity of the documents submitted by Buyer under clause 3.2. If such verification reveals any inaccuracy of information and/or any invalidity of documentation, without prejudice to its other rights and remedies under these Terms and Conditions or otherwise, Bid Drive USA reserves the right to:
                 </p>
 
                 <p className="ml-6 mb-4">
-                    3.6.1 reject Buyer's request for registration. Bid Drive Europe will inform Buyer of such rejection and may, in its sole discretion, determine to provide Buyer with the opportunity to rectify any such inaccuracies and/or invalidities; or
+                    3.6.1 reject Buyer's request for registration. Bid Drive USA will inform Buyer of such rejection and may, in its sole discretion, determine to provide Buyer with the opportunity to rectify any such inaccuracies and/or invalidities; or
                 </p>
 
                 <p className="ml-6 mb-4">
@@ -327,11 +327,11 @@ const TermsAndConditions = () => {
                 </p>
 
                 <p className="mb-4">
-                    3.7 Bid Drive Europe reserves at all times the right to refuse confirmation of a registration request without motivation. Bid Drive Europe shall not be liable for any Losses suffered or incurred by Buyer arising out of or in connection with any such refusal.
+                    3.7 Bid Drive USA reserves at all times the right to refuse confirmation of a registration request without motivation. Bid Drive USA shall not be liable for any Losses suffered or incurred by Buyer arising out of or in connection with any such refusal.
                 </p>
 
                 <p className="mb-4">
-                    3.8 If Bid Drive Europe decides to approve Buyer's request for registration, Bid Drive Europe will inform Buyer thereof and provide Buyer with one or more Means of Access for the Platform. Buyer shall not be able to submit any Offers until such approval by Bid Drive Europe and receipt of the Means of Access.
+                    3.8 If Bid Drive USA decides to approve Buyer's request for registration, Bid Drive USA will inform Buyer thereof and provide Buyer with one or more Means of Access for the Platform. Buyer shall not be able to submit any Offers until such approval by Bid Drive USA and receipt of the Means of Access.
                 </p>
 
             </section>
@@ -474,7 +474,7 @@ const TermsAndConditions = () => {
             </section>
 
             <section ref={salesRef} id="sales" className="mb-8">
-                <h2 className="text-xl font-semibold mb-2">6. nationwide-motors Europe Sales</h2>
+                <h2 className="text-xl font-semibold mb-2">6. nationwide-motors USA Sales</h2>
 
                 <p className="mb-2">
                     6.1.1 If (i) Buyer's Offer is deemed to be the best Buyer Community Offer in accordance with clause 6.1.3, (ii) Bid Drive is able to purchase the Vehicle(s) concerned from Seller and (iii) Bid Drive decides to accept such Offer in accordance with clause 5.1.3, Bid Drive sells the Vehicle(s) concerned to Buyer ("Bid Drive Sale"). The Vehicle(s) shall be sold at the Offered Price, to be increased with the Auction Fees, Country Fees, Seller Fees, Transport Fees and all applicable Taxes.
@@ -833,7 +833,7 @@ const TermsAndConditions = () => {
 
             <section ref={privacyRef} id="privacy" className="mb-8">
                 <h2 className="text-xl font-semibold mb-2">14. Privacy Policy</h2>
-                <p>14.1 The policy includes important information about how nationwide-motors Europe collects and treats your data.
+                <p>14.1 The policy includes important information about how nationwide-motors USA collects and treats your data.
 
                 <Link to='/footer/privacy' className='text-blue-600  hover:underline' >
                     Feel free to review our privacy policy here.

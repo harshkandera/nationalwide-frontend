@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       title: "Expanding a Local Dealership’s Inventory",
       comment:
-        "nationwide-motors.com has completely transformed my business. As a local dealer, I was limited to sourcing cars locally, but now I can access auctions across Europe. This has allowed me to offer my customers a wider selection of vehicles and grow my dealership.",
+        "nationwide-motors.com has completely transformed my business. As a local dealer, I was limited to sourcing cars locally, but now I can access auctions across USA. This has allowed me to offer my customers a wider selection of vehicles and grow my dealership.",
       client: "Thomas G., Munich, Germany",
     },
     {
@@ -36,7 +36,7 @@ const Testimonials = () => {
     {
       title: "Simplifying Corporate Vehicle Sales",
       comment:
-        "We needed to sell off several vehicles from our corporate fleet quickly. Using nationwide-motors.com, we were able to list and auction them in no time, reaching buyers across Europe. The platform made everything fast and easy.",
+        "We needed to sell off several vehicles from our corporate fleet quickly. Using nationwide-motors.com, we were able to list and auction them in no time, reaching buyers across USA. The platform made everything fast and easy.",
       client: "Emily K., London, UK",
     },
     {
@@ -48,7 +48,7 @@ const Testimonials = () => {
     {
       title: "Expanding Beyond Borders",
       comment:
-        "As a car dealer in Eastern Europe, I was looking for ways to expand my inventory. nationwide-motors.com gave me access to auctions in Western Europe, helping me diversify my stock and attract more customers.",
+        "As a car dealer in Eastern USA, I was looking for ways to expand my inventory. nationwide-motors.com gave me access to auctions in Western USA, helping me diversify my stock and attract more customers.",
       client: "Mateusz W., Warsaw, Poland",
     },
     {

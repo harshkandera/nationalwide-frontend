@@ -57,7 +57,7 @@ const About = () => {
 
           </div>
           <div>
-            Welcome to nationwide-motors, your premier online platform for vehicle auctions across Europe. Established with a passion for innovation and transparency in the automotive industry, we are dedicated to connecting buyers and sellers through a seamless, secure, and efficient online auction experience.
+            Welcome to nationwide-motors, your premier online platform for vehicle auctions across USA. Established with a passion for innovation and transparency in the automotive industry, we are dedicated to connecting buyers and sellers through a seamless, secure, and efficient online auction experience.
 
           </div>
         </div>
@@ -70,7 +70,7 @@ const About = () => {
 
           </div>
           <div>
-            At nationwide-motors, our mission is to revolutionize the way vehicles are bought and sold across Europe. We provide an intuitive and user-friendly platform that allows buyers to access a wide range of vehicles, from everyday cars to luxury models, all in one place. Sellers benefit from our extensive network and cutting-edge auction technology, ensuring that they reach the right buyers quickly and effectively.
+            At nationwide-motors, our mission is to revolutionize the way vehicles are bought and sold across USA. We provide an intuitive and user-friendly platform that allows buyers to access a wide range of vehicles, from everyday cars to luxury models, all in one place. Sellers benefit from our extensive network and cutting-edge auction technology, ensuring that they reach the right buyers quickly and effectively.
 
           </div>
         </div>

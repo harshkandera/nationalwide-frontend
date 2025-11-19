@@ -20,10 +20,10 @@ const PrivacyPolicy = () => {
 
                 <h2 className="text-xl font-bold mb-4">1. Overview</h2>
                 <p className="mb-4">
-                    nationwide-motors Europe cares about your privacy. This Privacy Policy is designed to help you obtain information about our privacy practices
+                    nationwide-motors USA cares about your privacy. This Privacy Policy is designed to help you obtain information about our privacy practices
                     and to help you understand your privacy choices when you use our sites and services. Our aim is to protect and process your personal data
                     with equal care in a lawful and transparent manner. (You; as a customer, possible future customer, website visitor or other natural person in
-                    contact with us. Us; as nationwide-motors Europe group including nationwide-motors Europe Holding NV, nationwide-motors Europe NV, nationwide-motors Belgium NV, nationwide-motors
+                    contact with us. Us; as nationwide-motors USA group including nationwide-motors USA Holding NV, nationwide-motors USA NV, nationwide-motors Belgium NV, nationwide-motors
                     Nederland B.V., nationwide-motors Deutschland GmbH, nationwide-motors France SAS, nationwide-motors Italia S.R.L., nationwide-motors Subastas España, S.L.). Contact details
                     can be found below at the end of this Policy.
                 </p>
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
                 </p>
                 <p className="mb-4">
                     <strong>Controller:</strong> The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the
-                    purposes and means of the processing of personal data. nationwide-motors Europe is the controller as regards personal data.
+                    purposes and means of the processing of personal data. nationwide-motors USA is the controller as regards personal data.
                 </p>
                 <p className="mb-4">
                     <strong>Processor:</strong> A natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller.
@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
                     The types of personal data we typically collect and process include:
                 </p>
                 <ul className="list-disc ml-6 mb-4">
-                    <li><strong>Identification Data:</strong> To register as a nationwide-motors Europe customer, we collect your company name, address, phone number, email address, and VAT number. If you wish to buy a product or service, you must provide a copy of your ID and proof of trade certification.</li>
+                    <li><strong>Identification Data:</strong> To register as a nationwide-motors USA customer, we collect your company name, address, phone number, email address, and VAT number. If you wish to buy a product or service, you must provide a copy of your ID and proof of trade certification.</li>
                     <li><strong>Transactional Data:</strong> If you wish to buy a product or service, we collect additional financial information such as your bank account number.</li>
                     <li><strong>Visiting Information:</strong> We trace certain information based on your visit to our site and store certain types of information whenever you interact with us through our channels (e.g., websites, smartphone apps).</li>
                 </ul>
@@ -84,9 +84,9 @@ const PrivacyPolicy = () => {
 
                 <h2 className="text-xl font-bold mb-4">6. With Whom Do We Share Your Personal Data?</h2>
                 <p className="mb-4">
-                    We share your personal data within the nationwide-motors Europe group and, in limited instances, outside the group. We may transfer personal data to other
+                    We share your personal data within the nationwide-motors USA group and, in limited instances, outside the group. We may transfer personal data to other
                     nationwide-motors affiliates or trusted third parties like internet service providers, cloud services, transport companies, or financial institutions.
-                    Personal data is adequately protected if transferred outside the European Economic Area (EEA).
+                    Personal data is adequately protected if transferred outside the USAan Economic Area (EEA).
                 </p>
 
                 <h2 className="text-xl font-bold mb-4">7. Your Security Matters</h2>

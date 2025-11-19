@@ -64,6 +64,7 @@ import Footer, { FooterCard } from "../../components/home/Footer";
 import { Icons } from "../../assests/Icons";
 import SEO from "../../service/helmet";
 import { useSocket } from "../../lib/SocketContext";
+import ProfileFormDialog from "../../component/ProfileFormDialog";
 
 const UserImage = (image, size = "8") =>
   image ? (
@@ -401,6 +402,32 @@ const CarDetails = () => {
   };
 
   // ('/buy_now/:userId/:carId
+
+  const [isProfileDialogOpen, setIsProfileDialogOpen] = useState(false);
+  const [isBuyNowFlow, setIsBuyNowFlow] = useState(false);
+
+  const handleBuyNowClick = () => {
+    if (!user || !istoken) {
+      navigate("/sign-in");
+      return;
+    }
+
+    setIsBuyNowFlow(true); // We are in Buy Now sequence
+    setIsProfileDialogOpen(true); // Always open dialog (OPTION C)
+  };
+
+  const handleProfileSuccess = () => {
+    if (isBuyNowFlow) {
+      buyNowSubmitHandler();
+    }
+    setIsBuyNowFlow(false);
+  };
+
+  const handleSkipProfile = () => {
+    setIsProfileDialogOpen(false);
+    setIsBuyNowFlow(false);
+    buyNowSubmitHandler();
+  };
 
   const buyNowSubmitHandler = async (getData) => {
     if (!user || !istoken) {
@@ -801,7 +828,7 @@ const CarDetails = () => {
                   <Button
                     variant="secondary"
                     className="w-full py-2"
-                    onClick={buyNowSubmitHandler}
+                    onClick={handleBuyNowClick}
                     disabled={buyNowLoading}
                   >
                     Buy Now in {formatPrice(data?.Listing?.buyNow?.buyNowPrice)}
@@ -1096,7 +1123,7 @@ const CarDetails = () => {
                 <Button
                   variant="secondary"
                   className="w-full py-2"
-                  onClick={buyNowSubmitHandler}
+                  onClick={handleBuyNowClick}
                   disabled={buyNowLoading}
                 >
                   Buy Now in {formatPrice(data?.Listing?.buyNow?.buyNowPrice)}{" "}
@@ -1136,6 +1163,15 @@ const CarDetails = () => {
           </div>
         </div>
       </MaxWidthWrapper>
+      <ProfileFormDialog
+        open={isProfileDialogOpen}
+        onOpenChange={setIsProfileDialogOpen}
+        onSuccess={handleProfileSuccess}
+        trigger={null}
+        allowSkip={user?.isProfileCompleted}
+        onSkip={handleSkipProfile}
+      />
+
       <Footer />
     </>
   );

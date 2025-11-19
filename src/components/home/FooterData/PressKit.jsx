@@ -12,12 +12,12 @@ const PressKit = () => {
                 <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-3xl font-bold leading-tight text-richblue-200 sm:text-4xl lg:text-5xl">nationwide-motors.com</h2>
-                        <p className="max-w-xl mx-auto mt-4 text-xl text-richblue-200/70 font-semibold">Europe’s Leader in Online Car Auction Sales</p>
+                        <p className="max-w-xl mx-auto mt-4 text-xl text-richblue-200/70 font-semibold">USA’s Leader in Online Car Auction Sales</p>
                     </div>
 
                     <div className="flex flex-col font-inter gap-8 mt-20">
                         <p>
-                            nationwide-motors.com is proud to announce its position as the leading platform in Europe’s online car auction industry. Offering a secure, centralized marketplace for vehicle transactions, nationwide-motors.com provides buyers and sellers with unmatched convenience, flexibility, and access to a vast range of vehicles. Our innovative auction platform allows customers to browse, bid, and purchase vehicles from anywhere in the world, breaking traditional barriers in the automotive market.
+                            nationwide-motors.com is proud to announce its position as the leading platform in USA’s online car auction industry. Offering a secure, centralized marketplace for vehicle transactions, nationwide-motors.com provides buyers and sellers with unmatched convenience, flexibility, and access to a vast range of vehicles. Our innovative auction platform allows customers to browse, bid, and purchase vehicles from anywhere in the world, breaking traditional barriers in the automotive market.
                         </p>
 
                         <p>
@@ -30,7 +30,7 @@ const PressKit = () => {
                         </p>
 
                         <p>
-                            “Our mission is to revolutionize the way people buy and sell cars,” said Matthias Schneider, CEO of nationwide-motors.com. “As Europe’s leading platform, we’re committed to making car auctions more accessible, efficient, and transparent for everyone, from individual buyers to large-scale dealers.”
+                            “Our mission is to revolutionize the way people buy and sell cars,” said Matthias Schneider, CEO of nationwide-motors.com. “As USA’s leading platform, we’re committed to making car auctions more accessible, efficient, and transparent for everyone, from individual buyers to large-scale dealers.”
                         </p>
 
                         <p>

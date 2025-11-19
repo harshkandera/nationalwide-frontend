@@ -54,7 +54,7 @@ const Culture = () => {
                         </div>
                         <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">Value for Money
                         </h3>
-                        <p className="mt-5 text-base text-gray-600 font-pj">At nationwide-motors.com, we offer competitive pricing and access to a vast selection of vehicles from across Europe. Our platform connects you with sellers directly, ensuring you get the best possible deal without unnecessary markups.
+                        <p className="mt-5 text-base text-gray-600 font-pj">At nationwide-motors.com, we offer competitive pricing and access to a vast selection of vehicles from across USA. Our platform connects you with sellers directly, ensuring you get the best possible deal without unnecessary markups.
                         </p>
                     </div>
 
