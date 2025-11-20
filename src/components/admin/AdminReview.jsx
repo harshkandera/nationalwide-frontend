@@ -359,7 +359,7 @@ export default function TestimonialsAdmin() {
       formDataToSend.append("content", formData.content);
       formDataToSend.append("type", formData.type);
       formDataToSend.append("verified", Boolean(formData.verified));
-      formDataToSend.append("date", new Date().toISOString().split("T")[0]);
+      formDataToSend.append("date", formData.date);
       formDataToSend.append("reviewCount", "1");
       formDataToSend.append("videoUrl", formData.videoUrl || "");
 
@@ -412,6 +412,7 @@ export default function TestimonialsAdmin() {
 
   const handleEdit = (testimonial) => {
     setSelectedTestimonial(testimonial);
+
     setFormData({
       name: testimonial.name,
       location: testimonial.location,
@@ -455,7 +456,8 @@ export default function TestimonialsAdmin() {
       formDataToSend.append("content", formData.content);
       formDataToSend.append("type", formData.type);
       formDataToSend.append("verified", Boolean(formData.verified));
-      formDataToSend.append("date", new Date().toISOString().split("T")[0]);
+      formDataToSend.append("date", formData.date);
+
       formDataToSend.append("reviewCount", "1");
       formDataToSend.append("videoUrl", formData.videoUrl || "");
 
