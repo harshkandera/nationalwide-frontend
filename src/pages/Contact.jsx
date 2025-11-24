@@ -243,8 +243,7 @@ const Contact = () => {
                 f
                 rel="noopener noreferrer"
               > */}
-                
-               +1 (231) 310-6051
+               4047379123
               {/* </a>{" "} */}
             </div>
           </div>
@@ -255,10 +254,10 @@ const Contact = () => {
 
             <div className="flex justify-center flex-col gap-2 items-center">
               <p className="text-lg text-richblue-200 font-bold">
-                296 Warrenton Rd,
+                540 Hosea Rd,
               </p>
               <p className="text-sm text-muted-foreground">
-                Fredericksburg, VA 22405{" "}
+                Lawrenceville, GA 30046
               </p>
             </div>
 
@@ -271,7 +270,7 @@ const Contact = () => {
               <p className="text-sm text-richblue-200 font-semibold">
                 Register:{" "}
                 <span className="font-normal">
-                  296 Warrenton Rd, Fredericksburg, VA 22405
+                  540 Hosea Rd, Lawrenceville, GA 30046
                 </span>
               </p>
               <p className="text-sm text-richblue-200 font-semibold">

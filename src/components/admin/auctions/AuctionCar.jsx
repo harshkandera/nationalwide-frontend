@@ -750,7 +750,7 @@ export const UploadInvoice = ({ carId, userId }) => {
       try {
         const response = await apiConnector(
           "GET",
-          `/api/v2/get_invoices/${carId}/${userId}`
+          `${process.env.REACT_APP_BASE_URL}/api/v2/get_invoices/${carId}/${userId}`
         );
 
         if (response?.data?.invoices?.length > 0) {
@@ -792,7 +792,7 @@ export const UploadInvoice = ({ carId, userId }) => {
     try {
       const response = await apiConnector(
         "POST",
-        `/api/v2/upload_invoices/${carId}/${userId}`,
+        `${process.env.REACT_APP_BASE_URL}/api/v2/upload_invoices/${carId}/${userId}`,
         formData
       );
 
