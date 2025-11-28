@@ -243,7 +243,7 @@ const Contact = () => {
                 f
                 rel="noopener noreferrer"
               > */}
-               (404) 737-9123
+               (404) 857-2857
               {/* </a>{" "} */}
             </div>
           </div>
