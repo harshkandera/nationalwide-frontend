@@ -5,103 +5,103 @@ import MaxWidthWrapper from '../../../component/MaxWidthWrapper';
 
 const FAQ = ({ data }) => {
 
-  const [faqs, setFaqs] = useState([
-    {
-      question: "How do I register?",
-      answer: "The first thing you need to do is submit your email address. You will receive a verification code to your email. Next step is to choose a password and your account is created. You can update your information under the Profile section after your account is created.",
-      isOpen: false
-    },
-    {
-      question: "How does the auction process work?",
-      answer: "STEP 1: Log in and go to the car details page of the vehicle you want to bid on. STEP 2: Enter your bid by typing in the amount or using the + / - button. You cannot place a bid lower than the starting price or the current highest bid. You will immediately see the total price you will need to pay at that bid level, including fees and taxes. STEP 3: Submit your bid by clicking the ‘Place bid’ button. Remember: all bids are binding and cannot be cancelled or removed from the website.",
-      isOpen: false
-    },
-    {
-      question: "What happens if your bid wins?",
-      answer: "If your bid wins, we’ll begin by verifying your identity—a crucial step in ensuring secure transactions. Once your identity is confirmed, you’ll receive an invoice for your purchase, which must be paid within 48 hours. After payment is received, we’ll arrange for the shipping of your item to your specified location.",
-      isOpen: false
-    },
-    {
-      question: "Has the vehicle been in an accident?",
-      answer: "We always inform you if a car was involved in an accident. In the Damage section, you’ll find clear details on whether the vehicle has any damage or accident history.",
-      isOpen: false
-    },
-    {
-      question: "If no service book available, can I get a service history?",
-      answer: "All cars are thoroughly inspected before being listed on our website. However, the service history may not always be available during the auction period.",
-      isOpen: false
-    },
-    {
-      question: "How can I recognize pictures from damages?",
-      answer: "It’s easy to spot a damaged car on the nationwide-motors website: We provide detailed photos to help you inspect any interior or exterior damage, including scratches or dings. If a car has mechanical issues, these will be clearly noted in the description.",
-      isOpen: false
-    },
-    {
-      question: "The vehicle I’ve bought has stickers or logos on it. Will they be removed before delivery?",
-      answer: "Yes. All stickers and logos will be removed before your vehicle is delivered. As part of our purchase agreement, nationwide-motors is required to remove all branding, stickers and logos applied by the previous owner(s) of the vehicle and present the seller with proof that they have been removed.",
-      isOpen: false
-    },
-    {
-      question: "How and when do I pay for the vehicle?",
-      answer: "Once you’ve won the auction, you have one business day to complete the vehicle purchase online. After receiving the payment invitation, you pay for the vehicle via bank transfer within two business days. It’s possible to make payments for maximum 2 cars in one transfer. Please include the reference numbers of all vehicles you paid for. We only accept payments from a bank account registered in your name.",
-      isOpen: false
-    },
-    {
-      question: "How can I know when you have received my payment?",
-      answer: "We will send you a release note via email as soon as we have received your payment.",
-      isOpen: false
-    },
-    {
-      question: "How can I order transport?",
-      answer: "You won the auction and paid for it? Congratulations! Now you just need to get it to your doorstep. We are happy to arrange transport for you. We will deliver the vehicle to an address of your choosing for a standard delivery fee of €0.5 per kilometer.",
-      isOpen: false
-    },
-    {
-      question: "Can I change the delivery address for a transport I already ordered?",
-      answer: "Yes, you can change the delivery address only before shipping starts. If you change the delivery address after shipping starts, we will ask for an additional cost of €150 and recalculate the distance to your new delivery address.",
-      isOpen: false
-    },
-    {
-      question: "Can I pick up the vehicle and pay for it at the storing location?",
-      answer: "You can pick up a vehicle only with a Pick Up Authorization (PuA).",
-      isOpen: false
-    },
-    {
-      question: "What is a Pickup Authorization (PuA) or release note?",
-      answer: "With a Pickup Authorization (PuA), you or your driver can pick up your vehicle. This document gives you permission to collect the car. Without the PuA, the vehicle cannot be picked up. This ensures your vehicle is not picked up by the wrong driver.",
-      isOpen: false
-    },
-    {
-      question: "How do I receive the Pickup Authorization (PuA)?",
-      answer: "A Pickup Authorization is released after the payment for the vehicle is completed and the buyer requests to pick up the vehicle from one of our pickup locations.",
-      isOpen: false
-    },
-    {
-      question: "When will I receive my car documents?",
-      answer: "The car documents will be sent with the vehicle.",
-      isOpen: false
-    },
-    {
-      question: "Can I get a copy of the car documents before the car is delivered?",
-      answer: "You can order a copy of the car documents as soon as you complete your order. Each copy will cost you €45.00.",
-      isOpen: false
-    },
-    {
-      question: "What is a COC?",
-      answer: "A Certificate of Conformity (COC) is a document that declares that your vehicle conforms to EC standards and is allowed free movement within the USAan Union. It includes the manufacturer’s technical specifications and other data as set by EU regulations.",
-      isOpen: false
-    },
-    {
-      question: "Can I get a duplicate invoice?",
-      answer: "Lost your invoice? No problem. All our invoices are available online as PDF files.",
-      isOpen: false
-    },
-    {
-      question: "Can I get a hard copy of my invoice?",
-      answer: "nationwide-motors has abandoned printed documents for the convenience of electronic documents. They’re better for the environment and have the same legal status as hard copy equivalents.",
-      isOpen: false
-    }
-  ]);
+ const [faqs, setFaqs] = useState([
+  {
+    question: "How do I register?",
+    answer: "To register, simply enter your email address and we’ll send you a verification code. After verifying your email, you can set your password and complete your profile inside the account dashboard.",
+    isOpen: false
+  },
+  {
+    question: "How does the auction process work?",
+    answer: "STEP 1: Log in and open the vehicle details page of the car you want to bid on. STEP 2: Enter your bid using the input box or the + / – buttons. You cannot bid below the starting price or the current highest bid. STEP 3: Click ‘Place Bid’. All bids are final and legally binding.",
+    isOpen: false
+  },
+  {
+    question: "What happens if my bid wins?",
+    answer: "If your bid wins, we will begin by verifying your identity to ensure a secure purchase. Once verified, you will receive an invoice that must be paid within 48 hours. After payment is confirmed, we’ll coordinate shipping to your chosen U.S. address.",
+    isOpen: false
+  },
+  {
+    question: "Has the vehicle been in an accident?",
+    answer: "If the car has accident history, it will be clearly mentioned. Check the Damage or Condition Report section for detailed information, including previous accidents or structural repairs.",
+    isOpen: false
+  },
+  {
+    question: "If the service book is not available, can I get a service history?",
+    answer: "Vehicles are inspected before listing, but service history may not always be available depending on the previous owner or auction source.",
+    isOpen: false
+  },
+  {
+    question: "How can I recognize damages in the pictures?",
+    answer: "We provide detailed, high-quality photos showing exterior and interior condition, including scratches, dents, or mechanical issues. Any major damage will be highlighted in the listing.",
+    isOpen: false
+  },
+  {
+    question: "The vehicle I purchased has decals or business logos. Will they be removed before delivery?",
+    answer: "Yes. Any commercial decals, stickers, or branding applied by the previous owner will be removed before delivery, and proof of removal will be documented.",
+    isOpen: false
+  },
+  {
+    question: "How and when do I pay for the vehicle?",
+    answer: "Once you win the auction, you will receive a payment request. Payment must be completed via bank transfer or ACH within 2 business days. All payments must be made from a bank account registered in your name.",
+    isOpen: false
+  },
+  {
+    question: "How will I know when my payment has been received?",
+    answer: "You will receive an email confirmation and a release note once your payment is successfully processed.",
+    isOpen: false
+  },
+  {
+    question: "How can I order transport?",
+    answer: "Once you've paid for your vehicle, we can arrange nationwide delivery to any U.S. address. Delivery fees start at $0.50 per mile, depending on distance and location.",
+    isOpen: false
+  },
+  {
+    question: "Can I change the delivery address for a transport I already scheduled?",
+    answer: "Yes, but only before the vehicle is dispatched. Changing the delivery address after shipping has begun may incur an additional fee of $150, along with an updated mileage cost.",
+    isOpen: false
+  },
+  {
+    question: "Can I pick up the vehicle and pay for it at the storage location?",
+    answer: "Vehicles can only be picked up with a Pickup Authorization (PuA). Payment must be completed online before pickup.",
+    isOpen: false
+  },
+  {
+    question: "What is a Pickup Authorization (PuA)?",
+    answer: "A Pickup Authorization is a document that allows you or your authorized transporter to collect the vehicle. Without this document, the vehicle cannot be released.",
+    isOpen: false
+  },
+  {
+    question: "How do I receive the Pickup Authorization (PuA)?",
+    answer: "The PuA is issued after your payment has been confirmed and you request vehicle pickup from one of our approved U.S. pickup locations.",
+    isOpen: false
+  },
+  {
+    question: "When will I receive my vehicle documents?",
+    answer: "Your vehicle documents, including the title and bill of sale, will be shipped along with the vehicle or sent separately depending on state regulations.",
+    isOpen: false
+  },
+  {
+    question: "Can I get a copy of the vehicle documents before the vehicle is delivered?",
+    answer: "Yes, you may request digital copies of essential vehicle documents once your order is processed. A small service fee of $45 applies.",
+    isOpen: false
+  },
+  {
+    question: "What is a Certificate of Conformity (COC)?",
+    answer: "A Certificate of Conformity verifies that your vehicle meets U.S. EPA and DOT compliance standards. It includes manufacturer specifications and required regulatory information.",
+    isOpen: false
+  },
+  {
+    question: "Can I get a duplicate invoice?",
+    answer: "Yes. All your invoices are available for download at any time as PDF files in your account dashboard.",
+    isOpen: false
+  },
+  {
+    question: "Can I get a hard copy of my invoice?",
+    answer: "We use digital documentation for convenience and environmental reasons. However, you may print your invoice directly from your dashboard if needed.",
+    isOpen: false
+  }
+]);
 
   const changeHandle = (index) => {
     setFaqs((prevData) => {
