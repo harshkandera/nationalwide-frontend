@@ -56,7 +56,7 @@ function calculateTimeLeft(startTime, endTime) {
       minutes: 0,
       seconds: 0,
       expired: true,
-      status: "expired",
+      status: "reserved",
       color: "#FF0000", // Red for expired
     };
   }
@@ -284,27 +284,27 @@ export const Timer = ({ timeLeft }) => {
 
 // Car Status Helper Function
 const carStatus = ({ status, endTime, startTime }) => {
-  const currentTime = new Date();
+  const now = new Date();
   const start = new Date(startTime);
   const end = new Date(endTime);
 
-  if (status === "live") {
-    if (currentTime >= start && currentTime <= end) {
-      return "Live";
-    } else if (currentTime > end) {
-      return "Expired";
-    }
+  // Past auctions should always be Reserved
+  if (status === "past" || now > end) {
+    return "Reserved";
   }
 
-  if (status === "live" && currentTime < start) {
+  // Upcoming (start time is in the future)
+  if (now < start) {
     return "Upcoming";
   }
 
-  if (status === "past" || currentTime > end) {
-    return "Expired";
+  // Live (between start and end)
+  if (status === "live" && now >= start && now <= end) {
+    return "Live";
   }
 
   return "Unknown";
 };
+
 
 export default CarCards;

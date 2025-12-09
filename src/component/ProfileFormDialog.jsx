@@ -498,7 +498,7 @@ const ProfileFormDialog = ({
                       {loading ? (
                         <span className="loader"></span>
                       ) : (
-                        "Save Profile"
+                        "Buy Now"
                       )}
                     </Button>
                   </div>
